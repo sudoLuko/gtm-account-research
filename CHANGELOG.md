@@ -15,4 +15,4 @@
 ## Standalone repository — 2026-09-11
 
 - Package the unchanged qa-r2 skill with installation guidance and portable synthetic tests.
-- Preserve the original release ZIP and manifest. License selection remains pending.
+- Add the MIT license to the repository and installable skill; refresh the release ZIP and manifest before first publication. Runtime code is unchanged.

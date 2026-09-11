@@ -40,4 +40,4 @@ See [TESTING.md](TESTING.md) for reproducible local tests and the limits of the 
 
 ## License
 
-A license has not yet been selected. No open-source license is granted by this repository. Choose and add a license before publishing it for reuse.
+[MIT](LICENSE) © 2026 Luke Olson.

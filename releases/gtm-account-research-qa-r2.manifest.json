@@ -2,6 +2,7 @@
   "skill": "gtm-account-research",
   "release": "qa-r2",
   "files": {
+    "LICENSE": "f5802f2d6e8dc6824c2186ceee1e4f82226961bc465ac797f3b52d22cbe4873e",
     "SKILL.md": "6d02528e0868cb280b6a3f51dfbaef7f3828a970297ed6ac91f2426f138f1ffa",
     "agents/openai.yaml": "5ee8eb5adfca32ac34d5a7abafbb15b55a2cfb07db8d2516c96858667d1ddc83",
     "references/deliverables.md": "a4a6e3d1e7d8e2389a5542b195d3cc92ccb523f7a5f4728b8329df0391d099f5",
@@ -21,7 +22,7 @@
     "scripts/requirements-media.txt": "5e4fab0f50a171349136fda5d018c51ac78be0faa43b4e335e46a028493494c5",
     "scripts/validate.py": "ccbd35f031dd1e9fb64347ee7b5501ee5fd45bd51a73bad9401ed11865ecd855"
   },
-  "readme_sha256": "aaed301bf8ab6ed15255d26e5335e51165d56c2cd2f894d2c3776bb4a10b490c",
-  "zip_sha256": "45c1848e3fdc146cca50d550d53cb5db5fa8760860ee97f9bf4a61f295f2a60e",
-  "zip_bytes": 44293
+  "readme_sha256": "ca6fbc993f6c33ef510fd708ad57c4262826f71e53d831c40b5a44e6cfc3b82d",
+  "zip_sha256": "89015328e5797307aaabfd74921ca18d7e585c150f8786502390ead296753b09",
+  "zip_bytes": 45102
 }
