@@ -1,0 +1,338 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sources.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "2.0"
+      ]
+    },
+    "account_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "public-url"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "author": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "kind": {
+            "enum": [
+              "web",
+              "document",
+              "job",
+              "social",
+              "video",
+              "search"
+            ]
+          },
+          "published_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "partial-date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "publication_kind": {
+            "enum": [
+              "published",
+              "uploaded",
+              "unknown"
+            ]
+          },
+          "event_on": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "partial-date"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "retrieved_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "timestamp"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reviewed_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "timestamp"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "date_notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "source-path"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "representation": {
+            "enum": [
+              "retained_text",
+              "normalized_text",
+              "automatic_captions",
+              "manual_captions",
+              "local_transcript",
+              "search_results",
+              "metadata_only",
+              "unavailable"
+            ]
+          },
+          "derived_from": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "correction_note": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "extracted_coverage": {
+            "enum": [
+              "full",
+              "partial",
+              "metadata_only",
+              "none"
+            ]
+          },
+          "reviewed_coverage": {
+            "enum": [
+              "full",
+              "selected",
+              "metadata_only",
+              "none"
+            ]
+          },
+          "coverage_notes": {
+            "type": "string",
+            "minLength": 1
+          },
+          "action_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "author",
+          "kind",
+          "published_on",
+          "publication_kind",
+          "event_on",
+          "retrieved_at",
+          "reviewed_at",
+          "date_notes",
+          "path",
+          "representation",
+          "derived_from",
+          "correction_note",
+          "extracted_coverage",
+          "reviewed_coverage",
+          "coverage_notes",
+          "action_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "quote": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "object",
+            "properties": {
+              "line_start": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "line_end": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "start_seconds": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "end_seconds": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "line_start",
+              "line_end",
+              "description",
+              "start_seconds",
+              "end_seconds"
+            ],
+            "additionalProperties": false
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limits": {
+            "type": "string",
+            "minLength": 1
+          },
+          "verification": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": [
+                  "basic",
+                  "targeted",
+                  "limited"
+                ]
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              },
+              "action_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+                },
+                "minItems": 0
+              }
+            },
+            "required": [
+              "status",
+              "notes",
+              "action_ids"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "source_id",
+          "quote",
+          "locator",
+          "interpretation",
+          "limits",
+          "verification"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "account_id",
+    "sources",
+    "evidence"
+  ],
+  "additionalProperties": false
+}

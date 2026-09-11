@@ -1,0 +1,27 @@
+{
+  "skill": "gtm-account-research",
+  "release": "qa-r2",
+  "files": {
+    "SKILL.md": "6d02528e0868cb280b6a3f51dfbaef7f3828a970297ed6ac91f2426f138f1ffa",
+    "agents/openai.yaml": "5ee8eb5adfca32ac34d5a7abafbb15b55a2cfb07db8d2516c96858667d1ddc83",
+    "references/deliverables.md": "a4a6e3d1e7d8e2389a5542b195d3cc92ccb523f7a5f4728b8329df0391d099f5",
+    "references/evidence-schema.md": "c408951e885e0dad03e4dad7913eba70f1f6ea645aa90753c28d60d0ac1afcdc",
+    "references/media-onboarding.md": "f635814c323062ffb45923fe3ea2b72c3e99b60dabfcdebc988c80bf564f55aa",
+    "references/media.md": "286da6c5b0bee37f03af82890ab69137168bce228014ca7b02d1f2ff5273e479",
+    "references/onboarding.md": "c768dca3b3b9a3d828099f28dc33cefc019780aa93630003ad85bf5dd490843c",
+    "references/qa.md": "6aa60a8bd824ce18b174a56fc726151478dfb513c6482e8b852fc0014178cfd1",
+    "references/seller-context.md": "6c93042e7ad2669d97d6fa9c0960ee57f7e0776223e693c9adec146781cd8eb8",
+    "schemas/account.schema.json": "ab2639bb89c60dd319f941bf0e3c9e4463854f43fe07fc4882791f5b09f8caee",
+    "schemas/research-log.schema.json": "daf8d0d845954c5057262a5821641713f840f2174775c0393fc65851fbb98030",
+    "schemas/seller-profile.schema.json": "bc210331724173c8c3186fe813dd40083178f55865240784de71c0d418dd68fe",
+    "schemas/sources.schema.json": "1e75a39b4df3e5a5c928c66eb384b7368b6d6edc686cb9a7696b8ce9968ce592",
+    "scripts/bundle.py": "751793a4e5b28ebbb8d0f7cc17a3aaa96b7371ca5bb07d80ba84c5dbaf88b05d",
+    "scripts/media.py": "dd983939ac836c3111f3b15a99569d27af239c942d20cf4dcdb7d1beacfe6cc9",
+    "scripts/qa.py": "6e6f5f101968deba8f66e56ecc2f841ccc5ccc882b40451a1f8faab013927f0f",
+    "scripts/requirements-media.txt": "5e4fab0f50a171349136fda5d018c51ac78be0faa43b4e335e46a028493494c5",
+    "scripts/validate.py": "ccbd35f031dd1e9fb64347ee7b5501ee5fd45bd51a73bad9401ed11865ecd855"
+  },
+  "readme_sha256": "aaed301bf8ab6ed15255d26e5335e51165d56c2cd2f894d2c3776bb4a10b490c",
+  "zip_sha256": "45c1848e3fdc146cca50d550d53cb5db5fa8760860ee97f9bf4a61f295f2a60e",
+  "zip_bytes": 44293
+}

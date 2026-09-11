@@ -1,0 +1,4 @@
+interface:
+  display_name: "Account Research"
+  short_description: "Research accounts and explore their sourced evidence"
+  default_prompt: "Use $gtm-account-research to research this supplied prospect using my seller context, or answer my questions from a completed account evidence bundle."

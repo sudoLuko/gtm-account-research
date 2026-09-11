@@ -1,0 +1,4 @@
+# Optional; install only after actual user authorization.
+faster-whisper>=1.1,<2
+numpy>=1.26,<3
+# yt-dlp and FFmpeg are external executables; versions recorded by acceptance tests.
