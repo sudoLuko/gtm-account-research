@@ -6,10 +6,10 @@ Research one supplied B2B prospect against your product context, then ask questi
 
 Clone or download this repository, or extract the [release ZIP](releases/gtm-account-research-qa-r2.zip). Copy the `gtm-account-research` folder into your project's `.agents/skills/` directory, so the entry file is `.agents/skills/gtm-account-research/SKILL.md`. Start a new Codex session in that project. Preserve any existing customized installation before replacing it.
 
-Invoke `$gtm-account-research`, then supply labeled seller and prospect URLs. For example:
+Invoke `$gtm-account-research` with:
 
-Seller: <www.mycompany.com> 
-Prospect: <www.company.com>
+Seller: https://seller.example.com  
+Prospect: https://prospect.example.com
 
 ## Setup
 
