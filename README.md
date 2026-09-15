@@ -8,7 +8,8 @@ Clone or download this repository, or extract the [release ZIP](releases/gtm-acc
 
 Invoke `$gtm-account-research`, then supply labeled seller and prospect URLs. For example:
 
-Seller: <www.mycompany.com> Prospect: <www.company.com>
+Seller: <www.mycompany.com> 
+Prospect: <www.company.com>
 
 ## Setup
 
