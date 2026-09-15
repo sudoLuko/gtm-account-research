@@ -8,9 +8,7 @@ Clone or download this repository, or extract the [release ZIP](releases/gtm-acc
 
 Invoke `$gtm-account-research`, then supply labeled seller and prospect URLs. For example:
 
-Seller: Dalus https://dalus.io/ — Prospect: Voliro https://voliro.com/
-
-Use your own company and prospect. You may also supply seller product documents; the skill distinguishes supported capabilities from assumptions.
+Seller: <www.mycompany.com> -- Prospect: <www.company.com>
 
 ## Setup
 
